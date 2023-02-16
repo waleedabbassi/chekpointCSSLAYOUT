@@ -1,0 +1,22 @@
+VAR
+nbr_voy,nbr_mot,nbr_car:=INTEGER;
+phrase:=STRING;
+BEGIN
+nbr_car:=0;
+nbr_voy:=0;
+nbr_mot:=1;
+write("ecrire phrase")
+read(phrase)
+DO 
+IF (nbr_car=' ') THEN
+    nbr_mot:=nbr_mot+1;
+END_IF
+IF (nbr_car='a','e','u','i','o','y') THEN
+    nbr_voy:=nbr_voy+1;    
+END_IF
+nbr_car:=nbr_car+1;
+UNTIL (nbr_car='.')
+write("le nombre de caractére est ",nbr_car)
+write("le nombre de caractére est ",nbr_mot)
+write("le nombre de caractére est ",nbr_voy)
+END
