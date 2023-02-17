@@ -7,7 +7,7 @@ nbr_voy:=0;
 nbr_mot:=1;
 write("ecrire phrase")
 read(phrase)
-DO 
+REPEAT
 IF (nbr_car=' ') THEN
     nbr_mot:=nbr_mot+1;
 END_IF
